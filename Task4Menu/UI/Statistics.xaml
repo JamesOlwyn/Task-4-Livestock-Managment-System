@@ -1,0 +1,22 @@
+<Window x:Class="Task4Menu.UI.Statistics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Statistics" Height="450" Width="800" Background="#2D2D30">
+    <Grid>
+        <!-- Navigation Bar -->
+        <DockPanel Background="Black" Height="50" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" DockPanel.Dock="Left">
+                <Image Source="Logo/Logo.png" Width="50" Height="50" VerticalAlignment="Center"/>
+                <TextBlock Text="LMS" Foreground="White" FontSize="24" VerticalAlignment="Center" Margin="10,0,0,0" FontFamily="Liberation Sans" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                <Button Content="Inventory" Foreground="White" Background="Black" BorderBrush="Black" Click="GoToInventory" Margin="5,0" FontWeight="Bold" FontSize="20"/>
+                <Button Content="Statistics" Foreground="White" Background="Black" BorderBrush="Black" Click="GoToStatistics" Margin="5,0" FontWeight="Bold" FontSize="20"/>
+                <Button Content="Management" Foreground="White" Background="Black" BorderBrush="Black" Click="GoToManagement" Margin="5,0" FontWeight="Bold" FontSize="20"/>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- Main Content -->
+        <!-- Add your content here -->
+    </Grid>
+</Window>
