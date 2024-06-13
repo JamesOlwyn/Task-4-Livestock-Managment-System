@@ -22,10 +22,10 @@
 
         <!-- Main Content -->
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5">
+            <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5" Width="507">
                 <TextBlock Text="Welcome to LMS Livestock Management" TextAlignment="Center" HorizontalAlignment="Center" FontSize="24" Foreground="black" FontFamily="Liberation Sans" FontWeight="Bold"/>
             </Border>
-            <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5">
+            <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5" Width="396">
                 <StackPanel>
                     <TextBlock Text="The inventory section allows you to view all current livestock data." TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" FontSize="14" Foreground="Black" Margin="0,5" FontFamily="Liberation Sans" FontWeight="Bold"/>
                     <TextBlock Text="The statistics section allows you to view financial statistics and estimate investment returns." TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" FontSize="14" Foreground="Black" Margin="0,5" FontFamily="Liberation Sans" FontWeight="Bold"/>
@@ -35,7 +35,7 @@
             <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5" Width="250" HorizontalAlignment="Center">
                 <TextBlock x:Name="LoadingStatus" Text="Loading data, please wait..." TextAlignment="Center" HorizontalAlignment="Center" FontSize="14" Foreground="Black" FontFamily="Liberation Sans" FontWeight="Bold"/>
             </Border>
-            <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5" Width="250" HorizontalAlignment="Center" Visibility="{Binding IsDataLoaded, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Border Background="white" CornerRadius="10" Padding="5,10" Margin="0,5" Width="126" HorizontalAlignment="Center" Visibility="{Binding IsDataLoaded, Converter={StaticResource BooleanToVisibilityConverter}}">
                 <TextBlock x:Name="LoadedStatus" Text="Data loaded." TextAlignment="Center" HorizontalAlignment="Center" FontSize="14" Foreground="Black" FontFamily="Liberation Sans" FontWeight="Bold"/>
             </Border>
         </StackPanel>
